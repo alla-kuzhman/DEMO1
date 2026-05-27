@@ -55,8 +55,8 @@
         </ComboBox>
 
         <StackPanel Grid.Row="7" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
-            <Button Content="Сохранить" Width="100" Height="35" Margin="10" Click="SaveButton_Click" Background="LightGreen"/>
-            <Button Content="Отмена" Width="100" Height="35" Margin="10" Click="CancelButton_Click" Background="LightGray"/>
+            <Button Content="Сохранить" Width="100" Height="35" Margin="10" Click="SaveButton_Click" Background="#DEB887"/>
+            <Button Content="Отмена" Width="100" Height="35" Margin="10" Click="CancelButton_Click" Background="#DEB887"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -10,7 +10,7 @@
         Width="800" 
         WindowStartupLocation="CenterScreen">
 
-    <Grid Margin="10">
+    <Grid Background="#F5DEB3" Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -32,11 +32,11 @@
             <Button x:Name="SearchButton" 
                     Content="Найти" 
                     Width="80" 
-                    Margin="5" 
+                    Margin="5" Background="#DEB887"
                     Click="SearchButton_Click"/>
             <Button x:Name="ResetFilterButton" 
                     Content="Сброс" 
-                    Width="80" 
+                    Width="80" Background="#DEB887"
                     Margin="5" 
                     Click="ResetFilterButton_Click"/>
         </StackPanel>
@@ -48,23 +48,23 @@
                     Visibility="Collapsed">
             <Button x:Name="AddProductButton" 
                     Content="Добавить товар" 
-                    Width="120" 
+                    Width="120" Background="#DEB887"
                     Margin="5" 
                     Click="AddProductButton_Click"/>
             <Button x:Name="EditProductButton" 
                     Content="Редактировать" 
                     Width="120" 
-                    Margin="5" 
+                    Margin="5" Background="#DEB887"
                     Click="EditProductButton_Click"/>
             <Button x:Name="DeleteProductButton" 
                     Content="Удалить" 
-                    Width="100" 
+                    Width="100" Background="#DEB887"
                     Margin="5" 
                     Click="DeleteProductButton_Click"/>
             <Button x:Name="ManageOrdersButton" 
                     Content="Управление заказами" 
                     Width="150" 
-                    Margin="5" 
+                    Margin="5" Background="#DEB887"
                     Click="ManageProductButton_Click"/>
         </StackPanel>
 
@@ -89,6 +89,9 @@
                 <DataGridTextColumn Header="Кол-во" 
                                     Binding="{Binding Quantity}" 
                                     Width="80"/>
+                <DataGridTextColumn Header="Скидка" 
+                    Binding="{Binding Discount}" 
+                    Width="80"/>
             </DataGrid.Columns>
         </DataGrid>
 

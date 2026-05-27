@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Управление заказами" Height="500" Width="900"
         WindowStartupLocation="CenterScreen">
-    <Grid Margin="10">
+    <Grid Background="#F5DEB3" Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -17,10 +17,10 @@
 
         <TextBlock Text="Управление заказами" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,15" Grid.Row="0"/>
         <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,10" HorizontalAlignment="Center">
-            <Button x:Name="RefreshButton" Content="Обновить" Width="120" Height="35" Margin="5" Click="RefreshButton_Click" Background="LightBlue"/>
-            <Button x:Name="EditStatusButton" Content="Изменить статус" Width="150" Height="35" Margin="5" Click="EditStatusButton_Click" Background="LightGreen"/>
-            <Button x:Name="AddOrderButton" Content="Добавить заказ" Width="140" Height="35" Margin="5" Click="AddOrderButton_Click" Background="LightYellow"/>
-            <Button x:Name="DeleteOrderButton" Content="Удалить заказ" Width="130" Height="35" Margin="5" Click="DeleteOrderButton_Click" Background="LightCoral"/>
+            <Button x:Name="RefreshButton" Content="Обновить" Width="120" Height="35" Margin="5" Click="RefreshButton_Click" Background="#DEB887"/>
+            <Button x:Name="EditStatusButton" Content="Изменить статус" Width="150" Height="35" Margin="5" Click="EditStatusButton_Click" Background="#DEB887"/>
+            <Button x:Name="AddOrderButton" Content="Добавить заказ" Width="140" Height="35" Margin="5" Click="AddOrderButton_Click" Background="#DEB887"/>
+            <Button x:Name="DeleteOrderButton" Content="Удалить заказ" Width="130" Height="35" Margin="5" Click="DeleteOrderButton_Click" Background="#DEB887"/>
         </StackPanel>
         <DataGrid x:Name="OrdersGrid" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" AlternatingRowBackground="LightGray" FontSize="13">
             <DataGrid.Columns>

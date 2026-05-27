@@ -6,7 +6,7 @@
         Width="400" 
         WindowStartupLocation="CenterOwner">
 
-    <Grid Margin="20">
+    <Grid Background="#F5DEB3" Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -47,15 +47,14 @@
             <Button Content="Сохранить" 
                     Width="100" 
                     Height="35" 
-                    Margin="10" 
-                    Click="SaveButton_Click"
-                    Background="LightGreen"/>
+                    Margin="10" Background="#DEB887"
+                    Click="SaveButton_Click"/>
             <Button Content="Отмена" 
                     Width="100" 
                     Height="35" 
                     Margin="10" 
                     Click="CancelButton_Click"
-                    Background="LightGray"/>
+                    Background="#DEB887"/>
         </StackPanel>
     </Grid>
 </Window>

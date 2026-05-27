@@ -53,7 +53,17 @@ namespace DEMO1
         }
         private void LoadProducts()
         {
-            ProductsGrid.ItemsSource = db.Products.ToList();
+            var products = db.Products.ToList();
+            ProductsGrid.ItemsSource = products;
+
+            ProductsGrid.LoadingRow += (sender, e) =>
+            {
+                var product = e.Row.DataContext as Product;
+                if (product != null && product.Discount > 17)
+                {
+                    e.Row.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFDEAD"));
+                }
+            };
         }
         private void LoadCategories()
         {

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DEMO1"
         mc:Ignorable="d"
         Title="Редактирование товара" Height="400" Width="450">
-    <Grid Margin="10">
+    <Grid Background="#F5DEB3" Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -36,8 +36,8 @@
         <TextBlock Text="Путь к фото" Grid.Row="5" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
         <TextBox x:Name="ImagePathBox" Grid.Row="5" Grid.Column="1" Margin="5" Height="30"/>
         <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
-            <Button Content="Сохранить" Width="100" Height="35" Margin="10" Click="SaveButton_Click"/>
-            <Button Content="Отмена" Width="100" Height="35" Margin="10" Click="CancelButton_Click"/>
+            <Button Content="Сохранить" Width="100" Height="35" Margin="10" Background="#DEB887" Click="SaveButton_Click"/>
+            <Button Content="Отмена" Width="100" Height="35" Margin="10" Background="#DEB887" Click="CancelButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>

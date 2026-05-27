@@ -12,7 +12,7 @@ namespace DEMO1.Data
         public DbSet<Order> Orders { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=INBOOK_X3_PLUS;Initial Catalog=ShoeStoreDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True;",
+            optionsBuilder.UseSqlServer(@"Data Source=INBOOK_X3_PLUS;Initial Catalog=ToyStoreDB;Integrated Security=True;Encrypt=False;Trust Server Certificate=True",
                 options => options.EnableRetryOnFailure());
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DEMO1"
         mc:Ignorable="d"
-        Title="Магазин Обуви"
+        Title="ООО Мир Игрушек"
         Height="350" 
         Width="500"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Background="#FFFFFF">
 
-    <Grid Margin="20">
+    <Grid Background="#F5DEB3" Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -21,7 +22,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Добро пожаловать в магазин 'Обувь'"
+        <TextBlock Text="Добро пожаловать в магазин 'Мир Игрушек'"
                    FontSize="20"
                    FontWeight="Bold"
                    Margin="0,0,0,20"
@@ -40,14 +41,14 @@
                     Grid.Row="5">
             <Button x:Name="LoginButton"
                     Content="Войти"
-                    Width="100"
+                    Width="100" Background="#DEB887"
                     Height="35"
                     Margin="10"
                     Click="LoginButton_Click"/>
             <Button x:Name="GuestButton"
                     Content="Продолжить как гость"
                     Width="150"
-                    Height="35"
+                    Height="35" Background="#DEB887"
                     Margin="10"
                     Click="GuestButton_Click"/>
         </StackPanel>

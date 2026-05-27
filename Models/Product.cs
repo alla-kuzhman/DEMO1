@@ -17,5 +17,6 @@ namespace DEMO1.Models
         public string Category { get; set; } = string.Empty;
         public int Quantity { get; set; }
         public string? ImagePath { get; set; }
+        public int Discount { get; set; }  
     }
 }
